@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Matfrågor</h1>
+    </header>
+    <main>  
+        <form action="./tack.html" method="get">
+            <p>
+                <label for="namn">Namn:</label>
+                <input type="text" name="namn" id="namn" required ><br><!--Kräver input-->   
+            </p>
+            <p>
+                Föredrar du att äta ute eller laga egen mat? <br>
+                <input type="radio" name="matvanor" id="ute" value="ute" checked> <!--Förvald input-->
+                <label for="matvanor">Äta ute</label><br>
+                <input type="radio" name="matvanor" id="egen" value="egen">
+                <label for="matvanor">Laga egen mat</label>
+            </p>
+            <p>
+                Välj de alternativ som du gillar:<br>
+                <input type="checkbox" name="kolhydrater" id="ris" value="ris">
+                <label for="kolhydrater">Ris</label><br>
+                <input type="checkbox" name="kolhydrater" id="potatis" value="potatis">
+                <label for="kolhydrater">Potatis</label><br>
+                <input type="checkbox" name="kolhydrater" id="pasta" value="pasta">
+                <label for="kolhydrater">Pasta</label><br><br>
+            </p>
+            <p>
+                <label for="favorit">Favoriträtt:</label>
+                <input type="text" name="favorit" id="favorit" required><br><br><!--Kräver input-->
+                <input type="submit" value="Skicka"> 
+            </p>
+            
+        </form>
+    </main>
+    <footer>
+        <p>Skapad: 2026-09-02</p> 
+    </footer>
+    
+</body>
+</html>
